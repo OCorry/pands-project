@@ -1,12 +1,6 @@
+#Program that reads the Iris Dataset into Python and run analysis on the dataset 
 #Author: Orla Corry 
-'''
-import sys 
-with open(sys.argv[1], 'rt') as f:
-    data = f.read()  #storing f.read() in a variable called data so it is more accessable
-print (data)
-#dataset source: https://www.kaggle.com/datasets/saurabh00007/iriscsv?resource=download
-#checking that I have saved the dataset correcly and checking if i can read it in from the command line
-'''
+
 
 #importing libraries 
 
