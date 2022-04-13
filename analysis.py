@@ -32,11 +32,11 @@ describe = df.describe() #storing as variable describe
 with open ("variable_summary.txt" , 'wt') as f: #creating a .txt file  as 'f'which i can write to 
     #from now on the file will be referred to as 'f'
 
-    f.write('Analysis: Shape of Dataframe:') #writing a heading 'shape of dataframe and printing out result
-    print("\nThe shape of this dataframe is:", shape, file =f) #\n here so output will print below heading
-    #the first argument is the command shape and the second argument is to sent it to file 'f'
-    f.write('\n\n\nAnalysis: Description of Dataframe:') #using \n*3 so this prints 3 lines below the first output
-    print ("\n", describe, file =f) #\n here so output will print below heading
+    f.write('\t\t\t\t\t\t\tAnalysis:') #Heading-using \t to tab to centre 
+    print("\n\nShape:", shape, file =f) #\n here so there is 2 lines space from the heading 
+    #the first argument is the command shape and the second argument is to send it to file 'f'
+    
+    print ("\n\nDescription:\n",  describe, file =f) #/n after description so there is a break bwtween 'Description' and the output
 
     #https://stackoverflow.com/questions/36571560/directing-print-output-to-a-txt-file - accessed 13/04/22
 

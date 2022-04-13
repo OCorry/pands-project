@@ -1,9 +1,9 @@
-Analysis: Shape of Dataframe:
-The shape of this dataframe is: (150, 6)
+							Analysis:
+
+Shape: (150, 6)
 
 
-
-Analysis: Description of Dataframe:
+Description:
                 Id  SepalLengthCm  SepalWidthCm  PetalLengthCm  PetalWidthCm
 count  150.000000     150.000000    150.000000     150.000000    150.000000
 mean    75.500000       5.843333      3.054000       3.758667      1.198667
