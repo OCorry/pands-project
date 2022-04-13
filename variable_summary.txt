@@ -1,0 +1,6 @@
+Analysis: Shape of Dataframe:
+The shape of this dataframe is: (150, 6)
+
+
+
+Analysis: Description of Dataframe:
