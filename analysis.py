@@ -38,7 +38,7 @@ with open ("variable_summary.txt" , 'wt') as f: #creating a .txt file  as 'f'whi
     f.write('\n\n\nAnalysis: Description of Dataframe:') #using \n*3 so this prints 3 lines below the first output
     print ("\n", describe, file =f) #\n here so output will print below heading
 
-    #https://stackoverflow.com/questions/36571560/directing-print-output-to-a-txt-file - accessed 13/04
+    #https://stackoverflow.com/questions/36571560/directing-print-output-to-a-txt-file - accessed 13/04/22
 
 
 
