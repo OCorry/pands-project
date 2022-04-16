@@ -4,8 +4,6 @@
 
 #importing libraries 
 
-from stat import ST_DEV
-from statistics import stdev
 import pandas as pd  #to analysie data that is in tabular form
 import numpy as np #for working with data stored as arrays
 import matplotlib.pyplot as plt #plotting data 
