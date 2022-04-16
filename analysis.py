@@ -32,14 +32,6 @@ with open ("variable_summary.txt" , 'wt') as f: #creating a .txt file  as 'f'whi
     print ("\n\nDataframe Description:\n",  describe, file =f) #/n after description so there is a break between 'Description' and the output
 
     
-    sliced_data_Iris_setosa=df[0:50] #saving the Iris- Setosa sliced data as a variable 
-    sliced_data_Iris_versicolor=df[50:100] #saving Iris-versicolor data as variable 
-    sliced_data_Iris_virginica =df[100:150] #saving Iris-virginica data as variable
-
-
-    #print ("\n\nDetails of the Iris-setosa:\n",  sliced_data_Iris_setosa, file=f)
-    #print ("\n\nDetails of Iris-versicolor:\n", sliced_data_Iris_versicolor, file=f)
-    #print ("\nDetails of Iris-virginica:\n", sliced_data_Iris_virginica, file =f)
 
 
     #Analysis on Sepal Length
