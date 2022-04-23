@@ -2,17 +2,17 @@
 # Author: Orla Corry
 
 
-## Introduction
+Introduction
 The objective of this project was to obtain a copy of Ronald Fisher’s Iris dataset and carry out some analysis on the data contained in it using various libraries imported into Python.
 Before beginning the task, I set about doing some research into Fisher himself and the history and development of the Iris dataset. 
 Born in England on the 17th of February 1890, Fisher was a statistician, geneticist and eugenicist (The Royal Society | Scient in The Making, n.d.).The data for this dataset was gathered by a botanist named Edgar Anderson and the dataset was then established by Fisher in the early 20th Century. The data set contains 150 observations in total, allowing for 50 samples of the three different types of Iris Flower; Setosa, Virginica and Versicolor. On these, then he focused on four attributes or variables from each species Sepal Length, Sepal Width, Petal Length and Petal Width (Qureshi, 2021). 
 
-## Setting up 
+Setting up 
 For this project I needed the relevant programming environment on my machine. This included two software packages; namely Cmder and VS Code. I also needed to create a repository on my Github account to allow for my work to be accessed on another machine. 
 I set up my pands-project repository on Github and cloned it to my machine using Cmder. I made sure that my repository on Github was set to public for public viewing. I then downloaded a copy of the dataset from (Singh, 2018) as an excel, comma separated values (csv) file and saved this in my pands-project directory. 
 
 
-## Research and Analysis
+Research and Analysis
 I imported the relevant libraries needed for the data analysis, namely; Pandas (imported as pd), Numpy (imported as np), Matplotlib(imported as plt) and Seaborn (imported as sns).  Pandas is used for analysing data in tabular form, ie an excel sheet. Numpy is used for working with arrays and while Matplotlib is used for plotting data, Seaborn provides more of a variety of visualisation patterns with the data (Misal, 2019) 
 To start off, using Pandas I imported the Iris dataframe in csv format, storing it as ‘df’. 
 
@@ -43,26 +43,10 @@ Histograms:
 Next I worked on histograms to give a visual description of the four attributes of the Iris flowers. I created each histogram using df.hist() and inputted different parameters to make the them more readable. (pandas, 2022) & (ImportanceOfBeingErnest, 2017) .
 I gave the histograms a title and labelled the x and y axes. (tutorials point, 2022). I used the plt.show() command to print the output in the terminal and also used the plt.savefig(“filename.png”) to save the output as a .png file that would push up to Github. 
 In total, I had four histograms; Sepal Length, Sepal width and Petal Length & petal width. These showed me that the most frequent sepal length was about 5.5cm/5.6 cm. The most frequent sepal width was between 3.0 and 3.2cm. The most frequent petal length was between 1.0 and 1.6cm and petal length between 0.1 and 0.6cm. The most normally distributed histogram was the sepal width. This corresponds to the standard deviation figure I got above of 0.433594 which lies between 0 and 1.
+Fig 3.1:  					Fig 3.2:
+   
 
-
-Fig 3.1: 
-
-![Sepal Length](https://user-images.githubusercontent.com/98124862/164892735-c1fc424a-0180-4100-b07a-c7e48e688cc8.PNG)
-
-
-Fig 3.2:
-
-![Sepal Width](https://user-images.githubusercontent.com/98124862/164892747-aa94397c-ffc3-4341-b363-e2d9886b7c28.PNG)
-  
-
-Fig 3.3:	 
-
-![Petal Width](https://user-images.githubusercontent.com/98124862/164892645-c0fae330-8c2f-4b96-a794-5f3106643650.PNG)
-
-Fig3.4:
-
-![Petal Width](https://user-images.githubusercontent.com/98124862/164892759-40013b78-5a81-4ace-9fa2-dea88c998474.PNG)
-
+Fig 3.3:						Fig 3.4: 
   
 ### Scatterplots:
 
@@ -177,6 +161,122 @@ Available at: https://www.w3schools.com/python/python_ml_standard_deviation.asp#
 [Accessed 10 April 2022].
 
 
+
+
+
+
+
+Scatterplots:
+
+Finally, I generated 6 scatterplots for the 6 variation of pairs of variables:
+Sepal Length & Sepal Width, Petal Length and Petal Width, Sepal Length and Petal Width, Petal Length and Sepal Width, Petal Length and Sepal Length, Sepal Width and Petal width.
+
+To create the scatterplots, I used sns.impolot() (Gallery, 2018). Using this code allowed me to modify the appearance of the plot. I included a fit line to give more of an idea of how linear the scatterplot was. To include this I inputted ‘fit_reg=True’. To include the “Species” variable so that I could work with it, I used ‘hue’. I also included a legend to distinguish which plot was for which Iris type. I labelled the x and y axes as appropriate for each scatterplot.
+
+From (cmdline, 2009), I sourced code to change the colours of each of the three plots on each scatterplot, again to allow for easier interpretation of the plot. The colours were inputted as a dict{} and then stored as variable color_dict. This then meant that I just had to input color_dict in my code above rather than the whole block of code. 
+
+To take a look at the scatterplot of sepal width and petal width of the Iris-versicolor for example. There is a high correlation between the two as the scatterplot is quite compact and it fits quite well around the straight line. (Frost, 2022) This means that there is a strong connection between the sepal width and petal width in terms of the growth of one impacts the growth of the other.
+
+However, taking for example the sepal length and sepal width of the Iris-virginica, there is very low correlation between them as the plot is not compact and it does not fit well around the straight line. This means that there is little connection between the sepal length and sepal with in terms of their growth. 
+
+
+## Conclusion:
+
+
+
+
+
+## Bibliography:
+
+
+Christiansen, A., 2016. Directing print output to a .txt file. [Online] 
+Available at: https://stackoverflow.com/questions/36571560/directing-print-output-to-a-txt-file
+[Accessed 13 April 2022].
+
+
+Christiansen, A., 2016. Directing print output to a .txt file. [Online] 
+Available at: https://stackoverflow.com/questions/36571560/directing-print-output-to-a-txt-file
+[Accessed 23 April 2022].
+
+
+cmdline, 2009. How To Specify Colors to Scatter Plots in Python. [Online] 
+Available at: https://cmdlinetips.com/2019/04/how-to-specify-colors-to-scatter-plots-in-python/
+[Accessed 23 April 2022].
+
+
+Frost, J., 2022. Statistics By Jim Making statistics intuitive. [Online] 
+Available at: https://statisticsbyjim.com/graphs/scatterplots/
+[Accessed 23 April 2022].
+
+
+Gallery, P. G., 2018. Use categorical variable to color scatterplot in seaborn. [Online] 
+Available at: https://python-graph-gallery.com/43-use-categorical-variable-to-color-scatterplot-seaborn
+[Accessed 23 April 2022].
+
+
+GeeksforGeeks, 2021. Python – Basics of Pandas using Iris Dataset. [Online] 
+Available at: https://www.geeksforgeeks.org/python-basics-of-pandas-using-iris-dataset/
+[Accessed 16 April 2022].
+
+
+GeeksforGeeks, 2021. Python – Basics of Pandas using Iris Dataset. [Online] 
+Available at: https://www.geeksforgeeks.org/python-basics-of-pandas-using-iris-dataset/
+[Accessed 16 April 2022].
+
+
+GeeksforGeeks, 2022. Exploratory Data Analysis on Iris Dataset. [Online] 
+Available at: https://www.geeksforgeeks.org/exploratory-data-analysis-on-iris-dataset/
+[Accessed 06 April 2022].
+
+
+ImportanceOfBeingErnest, 2017. Python Matplotlib Histogram Color. [Online] 
+Available at: https://stackoverflow.com/questions/42172440/python-matplotlib-histogram-color
+[Accessed 21 April 2022].
+
+
+Miller, W., 2022. Python Dataframes: Describing a single column. [Online] 
+Available at: https://stackoverflow.com/questions/50165953/python-dataframes-describing-a-single-column
+[Accessed 16 April 2022].
+
+
+Misal, D., 2019. Comparing Python Data Visualization Tools: Matplotlib vs Seaborn. [Online] 
+Available at: https://analyticsindiamag.com/comparing-python-data-visualization-tools-matplotlib-vs-seaborn/
+[Accessed 10 April 2022].
+
+
+pandas, 2022. pandas.DataFrame.hist. [Online] 
+Available at: https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.hist.html
+[Accessed 21 April 2022].
+
+
+Qureshi, S., 2021. The Might Iris Dataset. [Online] 
+Available at: https://braintoy.ai/2021/04/19/mighty-iris-dataset/
+[Accessed 9 April 2022].
+
+
+Singh, S., 2018. Iris.csv. [Online] 
+Available at: https://www.kaggle.com/datasets/saurabh00007/iriscsv?resource=download
+[Accessed 9 April 2022].
+
+
+The Royal Society | Scient in The Making, n.d. The Royal Society | Scient in The Making. [Online] 
+Available at: https://makingscience.royalsociety.org/s/rs/people/fst00034451
+[Accessed 09 April 2022].
+
+
+tutorials point, 2022. tutorials point. [Online] 
+Available at: https://www.tutorialspoint.com/numpy/numpy_matplotlib.htm
+[Accessed 21 April 2022].
+
+
+w3schools, 2022. Pandas DataFrame iloc Property. [Online] 
+Available at: https://www.w3schools.com/python/pandas/ref_df_iloc.asp
+[Accessed 23 April 2022].
+
+
+w3schools, n.d. Machine Learning - Standard Deviation. [Online] 
+Available at: https://www.w3schools.com/python/python_ml_standard_deviation.asp#:~:text=Standard%20deviation%20is%20a%20number,out%20over%20a%20wider%20range
+[Accessed 10 April 2022].
 
 
 
