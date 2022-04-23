@@ -42,18 +42,24 @@ Histograms:
 Next I worked on histograms to give a visual description of the four attributes of the Iris flowers. I created each histogram using df.hist() and inputted different parameters to make the them more readable. (pandas, 2022) & (ImportanceOfBeingErnest, 2017) .
 I gave the histograms a title and labelled the x and y axes. (tutorials point, 2022). I used the plt.show() command to print the output in the terminal and also used the plt.savefig(“filename.png”) to save the output as a .png file that would push up to Github. 
 In total, I had four histograms; Sepal Length, Sepal width and Petal Length & petal width. These showed me that the most frequent sepal length was about 5.5cm/5.6 cm. The most frequent sepal width was between 3.0 and 3.2cm. The most frequent petal length was between 1.0 and 1.6cm and petal length between 0.1 and 0.6cm. The most normally distributed histogram was the sepal width. This corresponds to the standard deviation figure I got above of 0.433594 which lies between 0 and 1.
+
+
 Fig 3.1: 
+
 ![Sepal Length](https://user-images.githubusercontent.com/98124862/164892735-c1fc424a-0180-4100-b07a-c7e48e688cc8.PNG)
 
 
 Fig 3.2:
+
 ![Sepal Width](https://user-images.githubusercontent.com/98124862/164892747-aa94397c-ffc3-4341-b363-e2d9886b7c28.PNG)
   
 
 Fig 3.3:	 
+
 ![Petal Width](https://user-images.githubusercontent.com/98124862/164892645-c0fae330-8c2f-4b96-a794-5f3106643650.PNG)
 
 Fig3.4:
+
 ![Petal Width](https://user-images.githubusercontent.com/98124862/164892759-40013b78-5a81-4ace-9fa2-dea88c998474.PNG)
 
   
