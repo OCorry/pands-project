@@ -112,31 +112,31 @@ with open ("variable_summary.txt" , 'at') as f: #creating a .txt file  as 'f'whi
 
 
 #Histogram of Sepal Length 
-df.hist(column ="SepalLengthCm", grid=True, color="blue") #specifically picking out the sepal length attribute
+df.hist(column ="SepalLengthCm", grid=True, color="blue", legend =True) #specifically picking out the sepal length attribute
 plt.title("Sepal Length") #labling the title
 plt.xlabel('Sepal Length in cm', color ="green") #labling the x axis 
 plt.ylabel('Frequency', color ="green") #labling the y axis
-plt.savefig("Sepal Length.png") #saving the hist as a .png file 
+#plt.savefig("Sepal Length.png") #saving the hist as a .png file 
 #plt.show() #commenting this out - if not commented out it will print a hist in the terminal 
 
 #Histpgram of Petal width 
-df.hist(column ="SepalWidthCm", grid=True, color="blue",)
+df.hist(column ="SepalWidthCm", grid=True, color="blue", legend =True)
 plt.title("Sepal Width")
 plt.xlabel('Sepal width in cm', color ="green")
 plt.ylabel('Frequency', color ="green")
-plt.savefig("Sepal Width.png")
+#plt.savefig("Sepal Width.png")
 #plt.show()
 
 #Histogram of Petal Length
-df.hist(column ="PetalLengthCm", grid=True, color="blue",) 
+df.hist(column ="PetalLengthCm", grid=True, color="blue", legend =True) 
 plt.title("Petal Length")
 plt.xlabel('Petal Length in cm', color ="green")
 plt.ylabel('Frequency', color ="green")
-plt.savefig("Petal Length.png")
+#plt.savefig("Petal Length.png")
 #plt.show()
 
 #Histogram of Petal width
-df.hist(column ="PetalWidthCm", grid=True, color="blue",)
+df.hist(column ="PetalWidthCm", grid=True, color="blue", legend =True)
 plt.title("Petal Width")
 plt.xlabel('Petal Width in cm', color ="green")
 plt.ylabel('Frequency', color ="green")
