@@ -122,7 +122,7 @@ with open ("variable_summary.txt" , 'wt') as f: #creating a .txt file  as 'f'whi
     print(df[["PetalLengthCm",]][100:150].describe(), file = f) #using describe() to get analysis of the specidied column and rows
     print(df[["PetalWidthCm",]][100:150].describe(), file = f)
 
-
+                                #****Histograms****
 #Histogram of Sepal Length 
 df.hist(column ="SepalLengthCm", grid=True, color="blue", legend =True) #specifically picking out the sepal length attribute
 plt.title("Sepal Length") #labling the title
@@ -155,15 +155,19 @@ plt.xlabel('Petal Width in cm', color ="green")
 plt.ylabel('Count', color ="green")
 plt.savefig("Petal Width.png")
 #plt.show()
-    
+
+
+                                #*****Scatterplots***** 
+                                   
 color_dict = dict({'Iris-setosa':'blue', #https://cmdlinetips.com/2019/04/how-to-specify-colors-to-scatter-plots-in-python/
                   'Iris-versicolor':'purple',
-                  'Iris-virginica': 'red'})
+                  'Iris-virginica': 'red'}) #saving the colours as a dict {}
 
 #https://python-graph-gallery.com/43-use-categorical-variable-to-color-scatterplot-seaborn
-sns.lmplot( x="SepalLengthCm", y="SepalWidthCm", fit_reg=True, hue='Species', legend=True, palette =color_dict, data=df,)
+#using sns.lmplot so that i can 'modify' my plots
+sns.lmplot( x="SepalLengthCm", y="SepalWidthCm", fit_reg=True, hue='Species', legend=True, palette =color_dict, data=df,) #using the color_dict variable here to customise the colours of the 3 plots
 plt.title("Scatterplot of Sepal Length and Sepal Width", color ="green")
-plt.xlabel('Sepal Length cm', color ="green")
+plt.xlabel('Sepal Length cm', color ="green") 
 plt.ylabel('Sepal Width cm', color ="green")
 #plt.show()
 plt.savefig("Sepal Length and SepalWidth.png")
@@ -173,7 +177,7 @@ plt.title("Scatterplot of Petal Length and Petal Width", color ="green")
 plt.xlabel('Petal Length cm', color ="green")
 plt.ylabel('Petal Width cm', color ="green")
 #plt.show()
-plt.savefig("Petal Lenght and Petal Width.png")
+plt.savefig("Petal Length and Petal Width.png")
 
 sns.lmplot( x="SepalLengthCm", y="PetalWidthCm", fit_reg=True, hue='Species', legend=True, palette =color_dict, data=df,)
 plt.title("Scatterplot of Sepal Length and Petal Width", color ="green")
@@ -187,14 +191,14 @@ plt.title("Scatterplot of Petal Length and Sepal Width", color ="green")
 plt.xlabel('Petal Length cm', color ="green")
 plt.ylabel('Sepal Width cm', color ="green")
 #plt.show()
-plt.savefig("Petal Lenght and Sepal Width.png")
+plt.savefig("Petal Length and Sepal Width.png")
 
 sns.lmplot( x="PetalLengthCm", y="SepalLengthCm", fit_reg=True, hue='Species', legend=True, palette =color_dict, data=df,)
 plt.title("Scatterplot of Petal Length and Sepal Length", color ="green")
 plt.xlabel('Petal Length cm', color ="green")
 plt.ylabel('Sepal Length cm', color ="green")
 #plt.show()
-plt.savefig("Petal Lenght and Sepal Length.png")
+plt.savefig("Petal Length and Sepal Length.png")
 
 sns.lmplot( x="SepalWidthCm", y="PetalWidthCm", fit_reg=True, hue='Species', legend=True, palette =color_dict, data=df,)
 plt.title("Scatterplot of Sepal Width and Petal Width", color ="green")
@@ -202,7 +206,6 @@ plt.xlabel('Sepal Width cm', color ="green")
 plt.ylabel('Petal Width cm', color ="green")
 #plt.show()
 plt.savefig("Sepal Width and Petal Width.png")
-
 
 
 

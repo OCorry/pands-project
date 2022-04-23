@@ -64,7 +64,122 @@ Fig3.4:
 ![Petal Width](https://user-images.githubusercontent.com/98124862/164892759-40013b78-5a81-4ace-9fa2-dea88c998474.PNG)
 
   
+### Scatterplots:
+
+Finally, I generated 6 scatterplots for the 6 variation of pairs of variables:
+Sepal Length & Sepal Width, Petal Length and Petal Width, Sepal Length and Petal Width, Petal Length and Sepal Width, Petal Length and Sepal Length, Sepal Width and Petal width.
+
+To create the scatterplots, I used sns.impolot() (Gallery, 2018). Using this code allowed me to modify the appearance of the plot. I included a fit line to give more of an idea of how linear the scatterplot was. To include this I inputted ‘fit_reg=True’. To include the “Species” variable so that I could work with it, I used ‘hue’. I also included a legend to distinguish which plot was for which Iris type. I labelled the x and y axes as appropriate for each scatterplot.
+
+From (cmdline, 2009), I sourced code to change the colours of each of the three plots on each scatterplot, again to allow for easier interpretation of the plot. The colours were inputted as a dict{} and then stored as variable color_dict. This then meant that I just had to input color_dict in my code above rather than the whole block of code. 
+
+To take a look at the scatterplot of sepal width and petal width of the Iris-versicolor for example. There is a high correlation between the two as the scatterplot is quite compact and it fits quite well around the straight line. (Frost, 2022) This means that there is a strong connection between the sepal width and petal width in terms of the growth of one impacts the growth of the other.
+
+However, taking for example the sepal length and sepal width of the Iris-virginica, there is very low correlation between them as the plot is not compact and it does not fit well around the straight line. This means that there is little connection between the sepal length and sepal with in terms of their growth. 
+
+
+## Conclusion:
 
 
 
->>>>>>> 663b835abae99bef08a4bb1f408c05c699d0154c
+
+
+## Bibliography:
+
+
+Christiansen, A., 2016. Directing print output to a .txt file. [Online] 
+Available at: https://stackoverflow.com/questions/36571560/directing-print-output-to-a-txt-file
+[Accessed 13 April 2022].
+
+
+Christiansen, A., 2016. Directing print output to a .txt file. [Online] 
+Available at: https://stackoverflow.com/questions/36571560/directing-print-output-to-a-txt-file
+[Accessed 23 April 2022].
+
+
+cmdline, 2009. How To Specify Colors to Scatter Plots in Python. [Online] 
+Available at: https://cmdlinetips.com/2019/04/how-to-specify-colors-to-scatter-plots-in-python/
+[Accessed 23 April 2022].
+
+
+Frost, J., 2022. Statistics By Jim Making statistics intuitive. [Online] 
+Available at: https://statisticsbyjim.com/graphs/scatterplots/
+[Accessed 23 April 2022].
+
+
+Gallery, P. G., 2018. Use categorical variable to color scatterplot in seaborn. [Online] 
+Available at: https://python-graph-gallery.com/43-use-categorical-variable-to-color-scatterplot-seaborn
+[Accessed 23 April 2022].
+
+
+GeeksforGeeks, 2021. Python – Basics of Pandas using Iris Dataset. [Online] 
+Available at: https://www.geeksforgeeks.org/python-basics-of-pandas-using-iris-dataset/
+[Accessed 16 April 2022].
+
+
+GeeksforGeeks, 2021. Python – Basics of Pandas using Iris Dataset. [Online] 
+Available at: https://www.geeksforgeeks.org/python-basics-of-pandas-using-iris-dataset/
+[Accessed 16 April 2022].
+
+
+GeeksforGeeks, 2022. Exploratory Data Analysis on Iris Dataset. [Online] 
+Available at: https://www.geeksforgeeks.org/exploratory-data-analysis-on-iris-dataset/
+[Accessed 06 April 2022].
+
+
+ImportanceOfBeingErnest, 2017. Python Matplotlib Histogram Color. [Online] 
+Available at: https://stackoverflow.com/questions/42172440/python-matplotlib-histogram-color
+[Accessed 21 April 2022].
+
+
+Miller, W., 2022. Python Dataframes: Describing a single column. [Online] 
+Available at: https://stackoverflow.com/questions/50165953/python-dataframes-describing-a-single-column
+[Accessed 16 April 2022].
+
+
+Misal, D., 2019. Comparing Python Data Visualization Tools: Matplotlib vs Seaborn. [Online] 
+Available at: https://analyticsindiamag.com/comparing-python-data-visualization-tools-matplotlib-vs-seaborn/
+[Accessed 10 April 2022].
+
+
+pandas, 2022. pandas.DataFrame.hist. [Online] 
+Available at: https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.hist.html
+[Accessed 21 April 2022].
+
+
+Qureshi, S., 2021. The Might Iris Dataset. [Online] 
+Available at: https://braintoy.ai/2021/04/19/mighty-iris-dataset/
+[Accessed 9 April 2022].
+
+
+Singh, S., 2018. Iris.csv. [Online] 
+Available at: https://www.kaggle.com/datasets/saurabh00007/iriscsv?resource=download
+[Accessed 9 April 2022].
+
+
+The Royal Society | Scient in The Making, n.d. The Royal Society | Scient in The Making. [Online] 
+Available at: https://makingscience.royalsociety.org/s/rs/people/fst00034451
+[Accessed 09 April 2022].
+
+
+tutorials point, 2022. tutorials point. [Online] 
+Available at: https://www.tutorialspoint.com/numpy/numpy_matplotlib.htm
+[Accessed 21 April 2022].
+
+
+w3schools, 2022. Pandas DataFrame iloc Property. [Online] 
+Available at: https://www.w3schools.com/python/pandas/ref_df_iloc.asp
+[Accessed 23 April 2022].
+
+
+w3schools, n.d. Machine Learning - Standard Deviation. [Online] 
+Available at: https://www.w3schools.com/python/python_ml_standard_deviation.asp#:~:text=Standard%20deviation%20is%20a%20number,out%20over%20a%20wider%20range
+[Accessed 10 April 2022].
+
+
+
+
+
+
+
+
