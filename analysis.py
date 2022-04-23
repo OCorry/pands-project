@@ -159,11 +159,11 @@ plt.savefig("Petal Width.png")
 
                                 #*****Scatterplots***** 
                                    
-color_dict = dict({'Iris-setosa':'blue', #https://cmdlinetips.com/2019/04/how-to-specify-colors-to-scatter-plots-in-python/
+color_dict = dict({'Iris-setosa':'blue', 
                   'Iris-versicolor':'purple',
                   'Iris-virginica': 'red'}) #saving the colours as a dict {}
 
-#https://python-graph-gallery.com/43-use-categorical-variable-to-color-scatterplot-seaborn
+
 #using sns.lmplot so that i can 'modify' my plots
 sns.lmplot( x="SepalLengthCm", y="SepalWidthCm", fit_reg=True, hue='Species', legend=True, palette =color_dict, data=df,) #using the color_dict variable here to customise the colours of the 3 plots
 plt.title("Scatterplot of Sepal Length and Sepal Width", color ="green")
