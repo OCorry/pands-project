@@ -1,19 +1,18 @@
 # pands-project
 # Author: Orla Corry
 
-<<<<<<< HEAD
-=======
-Introduction
+
+## Introduction
 The objective of this project was to obtain a copy of Ronald Fisher’s Iris dataset and carry out some analysis on the data contained in it using various libraries imported into Python.
 Before beginning the task, I set about doing some research into Fisher himself and the history and development of the Iris dataset. 
 Born in England on the 17th of February 1890, Fisher was a statistician, geneticist and eugenicist (The Royal Society | Scient in The Making, n.d.).The data for this dataset was gathered by a botanist named Edgar Anderson and the dataset was then established by Fisher in the early 20th Century. The data set contains 150 observations in total, allowing for 50 samples of the three different types of Iris Flower; Setosa, Virginica and Versicolor. On these, then he focused on four attributes or variables from each species Sepal Length, Sepal Width, Petal Length and Petal Width (Qureshi, 2021). 
 
-Setting up 
+## Setting up 
 For this project I needed the relevant programming environment on my machine. This included two software packages; namely Cmder and VS Code. I also needed to create a repository on my Github account to allow for my work to be accessed on another machine. 
 I set up my pands-project repository on Github and cloned it to my machine using Cmder. I made sure that my repository on Github was set to public for public viewing. I then downloaded a copy of the dataset from (Singh, 2018) as an excel, comma separated values (csv) file and saved this in my pands-project directory. 
 
 
-Research and Analysis
+## Research and Analysis
 I imported the relevant libraries needed for the data analysis, namely; Pandas (imported as pd), Numpy (imported as np), Matplotlib(imported as plt) and Seaborn (imported as sns).  Pandas is used for analysing data in tabular form, ie an excel sheet. Numpy is used for working with arrays and while Matplotlib is used for plotting data, Seaborn provides more of a variety of visualisation patterns with the data (Misal, 2019) 
 To start off, using Pandas I imported the Iris dataframe in csv format, storing it as ‘df’. 
 
