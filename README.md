@@ -60,7 +60,7 @@ In total, I had four histograms; Sepal Length & Sepal width and Petal Length & p
 
 
 
-                                                                                                                                                                                                                             
+                                                                                                                                                                                                                      
                                                                                                                            
 
 ![Petal Length](https://user-images.githubusercontent.com/98124862/165548881-a1c56367-50f9-4643-b751-05f78145680b.PNG)   ![Petal Width](https://user-images.githubusercontent.com/98124862/165548927-74b3e873-f6a0-44b8-9c32-cd30b22ddfc7.PNG)
@@ -95,24 +95,10 @@ However, taking for example the sepal length and sepal width of the Iris-virgini
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 ## Conclusion:
 
 From the scatter plots in particular, it would appear the that the data for the Iris-setosa petals and sepals is the most correlated as the scatter plots are quite clusterd around the straight line. The Iris-versicolour and Iris- virginica data however, is less correlated as the scatter plots are generally quite dispersed. I found that while the standard deviation of each attribute from the dataframe as a whole (all 150 rows together) was generally quite normal-ranging between 0and 1- the histograms did not reflect this for the Petal Length and Petal Width. 
 I found from this project that there is a vast range of different analysis that can be done on this dataframe despite its small size. From my research, I found that there are numerous different types and structures of code that can be used for the same type of analysis. 
-
-
-
 
 
 
