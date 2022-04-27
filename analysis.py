@@ -8,6 +8,7 @@ import pandas as pd  #to analysie data that is in tabular form
 import numpy as np #for working with data stored as arrays
 import matplotlib.pyplot as plt #plotting data 
 import seaborn as sns #plotting data 
+from sklearn import linear_model #regression analysis
 
 
 #reading in the dataset
@@ -15,7 +16,7 @@ filename =("iris.csv")
 df = pd.read_csv (filename) #reading in the file to Python using Pandas
 #print (df)
 
-print(df.to_string()) #use this code to print the whole dataframe (df) rather than just the first 5 & last 5 rows
+#print(df.to_string()) #use this code to print the whole dataframe (df) rather than just the first 5 & last 5 rows
                     #https://www.w3schools.com/python/pandas/pandas_csv.asp
 
 
@@ -75,7 +76,9 @@ with open ("variable_summary.txt" , 'wt') as f: #creating a .txt file  as 'f'whi
     print ("The Median of Petal Width is {}cm:".format(median_data), file=f,)
 
 
-                    #*******Sliced data for each Iris type******
+
+
+                                            #SLICED DARA FOR EACH IRIS TYPE
     print("\n\n\nIris-setosa data (sliced from dataframe):", file =f) 
     print(df.iloc[0:50], file =f) #taking data from index location 0 to index 50 to allow for data from last row 
 
@@ -86,7 +89,7 @@ with open ("variable_summary.txt" , 'wt') as f: #creating a .txt file  as 'f'whi
     print(df.iloc[100:150], file =f)
 
 
-                    #*****Data on the indivudual Iris types, Sepals and Petals******
+                                        # DATA ON THE INDIVIDUAL IRIS TYPES (SEPALS AND PETALS) 
 
     #printing from the Sepal Lenth & Width columns and only printing the Iris-setosa data - using code [0:50]
     print("\n\n\nSepal Length and Sepal Width Analysis of Iris-setosa:\n",file=f)
@@ -122,7 +125,10 @@ with open ("variable_summary.txt" , 'wt') as f: #creating a .txt file  as 'f'whi
     print(df[["PetalLengthCm",]][100:150].describe(), file = f) #using describe() to get analysis of the specidied column and rows
     print(df[["PetalWidthCm",]][100:150].describe(), file = f)
 
-                                #****Histograms****
+
+
+
+                                                    #HISTOGRAMS
 #Histogram of Sepal Length 
 df.hist(column ="SepalLengthCm", grid=True, color="blue", legend =True) #specifically picking out the sepal length attribute
 plt.title("Sepal Length") #labling the title
@@ -157,7 +163,8 @@ plt.savefig("Petal Width.png")
 #plt.show()
 
 
-                                #*****Scatterplots***** 
+
+                                                    #SCATTERPLOTS 
                                    
 color_dict = dict({'Iris-setosa':'blue', 
                   'Iris-versicolor':'purple',
@@ -206,6 +213,38 @@ plt.xlabel('Sepal Width cm', color ="green")
 plt.ylabel('Petal Width cm', color ="green")
 #plt.show()
 plt.savefig("Sepal Width and Petal Width.png")
+
+
+
+
+                                    #REGRESSION ANALYSIS
+# prediction of Sepal Length given values for Petal Length and Petal Width: 
+x = df[['PetalLengthCm', 'PetalWidthCm']] #x is the two attributes from the dataframe that im working with to predict the value for y
+y = df['SepalLengthCm'] #the attribute that I am predicting the value of, using the regression analysis
+
+regr = linear_model.LinearRegression() 
+regr.fit(x, y) #run regression on given attributes (x) and output y
+
+
+predictedSepalLengthCm = regr.predict([[4.4, 1.4]]) #predicting the value of y (Sepal Width) 
+                                                    #given values of x (Petal Length and Petal width) from index 75 from the Dataframe
+
+#print("Predicted Sepal Length, given Petal Length 4.4cm and Petal Width 1.4cm is: {}" .format (predictedSepalLengthCm)) #outputting the pridected Sepal Width, given the values of Petal Length and Petal Width 
+#using .format() function to format an output string
+
+
+
+# prediction of petal width, given values for speal length and sepal width:
+x = df[['SepalLengthCm', 'SepalWidthCm']] #x is the two attributes from the dataframe that im working with to predict the value for y
+y = df['PetalWidthCm'] #the attribute that I am predicting the value of, using the regression analysis
+
+
+
+predictedPetalWidthCm = regr.predict([[7.7, 3]]) #predicting the value of y (Petal Width),
+                                                    #given values of x (Sepal Length & Sepal Width) from index 75 from the Dataframe
+
+print("Predicted Petal Width, given Sepal Length 7.7cm and Sepal Width 3cm is: {}" .format (predictedPetalWidthCm)) #outputting the pridected Petal Width, 
+                                                                                                                        #given the values of Petal Sepal Length & Sepal Width
 
 
 
