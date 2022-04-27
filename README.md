@@ -84,14 +84,18 @@ To take a look at the scatterplot of sepal width and petal width of the Iris-ver
 However, taking for example the sepal length and sepal width of the Iris-virginica, there is very low correlation between them as the plot is not compact and it does not fit well around the straight line. This means that there is little connection between the sepal length and sepal with in terms of their growth.  
 
 Fig 4.1						Fig4.2
+![Scatter Sepal Width and Sepal Length](https://user-images.githubusercontent.com/98124862/165551374-b325487d-47ae-4c1d-b9ed-91ee183ca927.PNG)     ![Scatter-Petal Length and Petal Width](https://user-images.githubusercontent.com/98124862/165551436-cefc3215-e4c1-4de9-aad1-d53be725fb13.PNG)
+
+
+
+![Scatter-Petal Length and Petal Width](https://user-images.githubusercontent.com/98124862/165551521-81479dd8-caa7-4efe-aa72-7de29bd8fee3.PNG)    ![Scatter-Petal Length and Sepal Width](https://user-images.githubusercontent.com/98124862/165551578-116f452f-64c2-497c-880d-e0fd20514363.PNG)
+
+
+![Scatter-Petal Width and Sepal Length](https://user-images.githubusercontent.com/98124862/165551650-805f09f1-764c-47e6-9289-66e2a8e9b26b.PNG)    ![Scatter-Petal Width and Sepal Width](https://user-images.githubusercontent.com/98124862/165551755-eca35a01-e5d0-487c-912e-d38ef1f975d6.PNG)
 
 
 
 
-Fig4.3						Fig 4.4
-
-
-Fig4.5						Fig 4.6
 
 
 
@@ -100,7 +104,8 @@ Fig4.5						Fig 4.6
 
 
 
-Conclusion:
+## Conclusion:
+
 From the scatter plots in particular, it would appear the that the data for the Iris-setosa petals and sepals is the most correlated as the scatter plots are quite clusterd around the straight line. The Iris-versicolour and Iris- virginica data however, is less correlated as the scatter plots are generally quite dispersed. I found that while the standard deviation of each attribute from the dataframe as a whole (all 150 rows together) was generally quite normal-ranging between 0and 1- the histograms did not reflect this for the Petal Length and Petal Width. 
 I found from this project that there is a vast range of different analysis that can be done on this dataframe despite its small size. From my research, I found that there are numerous different types and structures of code that can be used for the same type of analysis. 
 
@@ -112,7 +117,9 @@ I found from this project that there is a vast range of different analysis that 
 
 
 
-Bibliography
+# Bibliography
+
+
 Christiansen, A., 2016. Directing print output to a .txt file. [Online] 
 Available at: https://stackoverflow.com/questions/36571560/directing-print-output-to-a-txt-file
 [Accessed 13 April 2022].
