@@ -1,4 +1,4 @@
-							Analysis:
+							Analysis on each of the 3 Iris flowers characteristics:
 
 Shape:
  (150, 6)
@@ -18,30 +18,30 @@ max    150.000000       7.900000      4.400000       6.900000      2.500000
 
 
 Analysis on Sepal Length of three Iris types combined:
-The standard deviation of Sepal Length is 0.83cm:
-The mean of Sepal Length is 5.84cm:
-The median of Sepal Length is 5.8cm:
+The mean of Sepal Length is: 5.84cm
+The standard deviation of Sepal Length is: 0.83cm
+The median of Sepal Length is: 5.8cm
 
 
 
 Analysis on Sepal Width of three Iris types combined:
-The standard deviation of Sepal Width is 0.43cm:
-The mean of Sepal Width is 3.05cm:
-The Median of Sepal Width is 3.0cm:
+The mean of Sepal Width is: 3.05cm
+The standard deviation of Sepal Width is: 0.43cm
+The Median of Sepal Width is: 3.0cm
 
 
 
 Analysis on Petal Length of three Iris types combined:
-The standard deviation of Petal Length is 1.76cm:
-The mean of Petal Length is 3.76cm:
-The Median of Petal Length is 4.35cm:
+The mean of Petal Length is: 3.76cm
+The standard deviation of Petal Length is: 1.76cm
+The Median of Petal Length is: 4.35cm
 
 
 
 Analysis on Petal Width of three Iris types combined:
-The standard deviation of Petal Width is 0.76cm:
-The mean of Petal Width is 1.2cm:
-The Median of Petal Width is 1.3cm:
+The mean of Petal Width is: 1.2cm
+The standard deviation of Petal Width is: 0.76cm
+The Median of Petal Width is: 1.3cm
 
 
 
@@ -339,3 +339,9 @@ min         1.40000
 50%         2.00000
 75%         2.30000
 max         2.50000
+
+
+
+Regression Analysis:
+The predicted Sepal Length, given Petal Length of 5.5cm and Petal Width of 2.3cm is: [6.43662341]
+The predicted Petal Width, given Sepal Length of 7.7cm and Sepal Width of 3.3cm is: [7.31013867]

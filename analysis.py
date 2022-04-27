@@ -15,19 +15,18 @@ from sklearn import linear_model #regression analysis
 filename =("iris.csv")
 df = pd.read_csv (filename) #reading in the file to Python using Pandas
 #print (df)
-
 #print(df.to_string()) #use this code to print the whole dataframe (df) rather than just the first 5 & last 5 rows
-                    #https://www.w3schools.com/python/pandas/pandas_csv.asp
+                    
 
 
-
-shape = df.shape #storing as variable shape
-describe = df.describe() #storing as variable describe
 
 with open ("variable_summary.txt" , 'wt') as f: #creating a .txt file  as 'f'which i can write to 
     #from now on the file will be referred to as 'f'
 
-    f.write('\t\t\t\t\t\t\tAnalysis:') #Heading-using \t to tab to centre 
+    shape = df.shape #storing as variable shape
+    describe = df.describe() #storing as variable describe
+
+    f.write('\t\t\t\t\t\t\tAnalysis on each of the 3 Iris flowers characteristics:') #Heading-using \t to tab to centre 
     print("\n\nShape:\n", shape, file =f) #\n here so there is 2 lines space from the heading 
     #the first argument is the command shape and the second argument is to send it to file 'f'
     print ("\n\nDataframe Description:\n",  describe, file =f) #/n after description so there is a break between 'Description' and the output
@@ -36,60 +35,60 @@ with open ("variable_summary.txt" , 'wt') as f: #creating a .txt file  as 'f'whi
 
 
     #Analysis on Sepal Length
-    std_data = round(df["SepalLengthCm"].std(),2)
-    mean_data = round(df["SepalLengthCm"].mean(),2)
-    median_data = round(df["SepalLengthCm"].median(),2)
+    mean = round(df["SepalLengthCm"].mean(),2)
+    std_dev = round(df["SepalLengthCm"].std(),2) #using round() function to round output to 2 decimal places 
+    median = round(df["SepalLengthCm"].median(),2)
 
     print ("\n\n\nAnalysis on Sepal Length of three Iris types combined:", file=f)
-    print ("The standard deviation of Sepal Length is {}cm:".format(std_data), file=f)
-    print ("The mean of Sepal Length is {}cm:".format(mean_data), file=f)
-    print ("The median of Sepal Length is {}cm:".format(median_data), file=f)
+    print ("The mean of Sepal Length is: {}cm".format(mean), file=f)
+    print ("The standard deviation of Sepal Length is: {}cm".format(std_dev), file=f)
+    print ("The median of Sepal Length is: {}cm".format(median), file=f)
 
     #Analysis on Sepal Width
-    std_data = round(df["SepalWidthCm"].std(),2)
-    mean_data = round(df["SepalWidthCm"].mean(),2)
-    median_data = round(df["SepalWidthCm"].median(),2)
+    mean = round(df["SepalWidthCm"].mean(),2)
+    std_dev = round(df["SepalWidthCm"].std(),2) 
+    median = round(df["SepalWidthCm"].median(),2)
 
     print ("\n\n\nAnalysis on Sepal Width of three Iris types combined:", file=f)
-    print ("The standard deviation of Sepal Width is {}cm:".format(std_data), file=f)
-    print ("The mean of Sepal Width is {}cm:".format(mean_data), file=f)
-    print ("The Median of Sepal Width is {}cm:".format(median_data), file=f,)
+    print ("The mean of Sepal Width is: {}cm".format(mean), file=f)
+    print ("The standard deviation of Sepal Width is: {}cm".format(std_dev), file=f)
+    print ("The Median of Sepal Width is: {}cm".format(median), file=f,)
     
     #Analysis on Petal Length
-    std_data = round(df["PetalLengthCm"].std(),2)
-    mean_data = round(df["PetalLengthCm"].mean(),2)
-    median_data = round(df["PetalLengthCm"].median(),2)
+    mean = round(df["PetalLengthCm"].mean(),2)
+    std_dev = round(df["PetalLengthCm"].std(),2)
+    median = round(df["PetalLengthCm"].median(),2)
 
     print ("\n\n\nAnalysis on Petal Length of three Iris types combined:", file=f)
-    print ("The standard deviation of Petal Length is {}cm:".format(std_data), file=f)
-    print ("The mean of Petal Length is {}cm:".format(mean_data), file=f)
-    print ("The Median of Petal Length is {}cm:".format(median_data), file=f,)
+    print ("The mean of Petal Length is: {}cm".format(mean), file=f)
+    print ("The standard deviation of Petal Length is: {}cm".format(std_dev), file=f)
+    print ("The Median of Petal Length is: {}cm".format(median), file=f,)
 
     #Analysis on Petal Width
-    std_data = round(df["PetalWidthCm"].std(),2) #using round() here to round the output to 2 decimal places
-    mean_data = round(df["PetalWidthCm"].mean(),2)
-    median_data = round(df["PetalWidthCm"].median(),2)
+    mean = round(df["PetalWidthCm"].mean(),2)
+    std_dev = round(df["PetalWidthCm"].std(),2) 
+    median = round(df["PetalWidthCm"].median(),2)
 
     print ("\n\n\nAnalysis on Petal Width of three Iris types combined:", file=f)
-    print ("The standard deviation of Petal Width is {}cm:".format(std_data), file=f)
-    print ("The mean of Petal Width is {}cm:".format(mean_data), file=f)
-    print ("The Median of Petal Width is {}cm:".format(median_data), file=f,)
+    print ("The mean of Petal Width is: {}cm".format(mean), file=f)
+    print ("The standard deviation of Petal Width is: {}cm".format(std_dev), file=f)
+    print ("The Median of Petal Width is: {}cm".format(median), file=f,)
 
 
 
 
-                                            #SLICED DARA FOR EACH IRIS TYPE
+                                            #SLICED DATA FOR EACH IRIS TYPE
     print("\n\n\nIris-setosa data (sliced from dataframe):", file =f) 
-    print(df.iloc[0:50], file =f) #taking data from index location 0 to index 50 to allow for data from last row 
+    print(df.iloc[0:50], file =f) #taking data from index location 0 to index 50 to allow for inlcusion of data from last row 
 
     print("\n\nIris-versicolor data (sliced from dataframe):", file =f)
-    print(df.iloc[50:100], file =f)
+    print(df.iloc[50:100], file =f) #taking data from index location 50 to index 100 to allow for inlcusion of data from last row 
 
     print("\n\nIris-virginica data (sliced from dataframe):", file =f)
-    print(df.iloc[100:150], file =f)
+    print(df.iloc[100:150], file =f) #taking data from index location 100 to index 150 to allow for inlcusion of data from last row 
 
 
-                                        # DATA ON THE INDIVIDUAL IRIS TYPES (SEPALS AND PETALS) 
+                                        # DATA ANALYSIS ON THE INDIVIDUAL IRIS TYPES (SEPALS AND PETALS) 
 
     #printing from the Sepal Lenth & Width columns and only printing the Iris-setosa data - using code [0:50]
     print("\n\n\nSepal Length and Sepal Width Analysis of Iris-setosa:\n",file=f)
@@ -102,11 +101,11 @@ with open ("variable_summary.txt" , 'wt') as f: #creating a .txt file  as 'f'whi
     print(df[["PetalWidthCm",]][0:50].describe(), file = f)
 
 
-
     #printing from the Sepal Lenth & Width columns and only printing the Iris-versicolor data - using code [50:100]
     print("\n\nSepal Length and Sepal Width Analysis of Iris-versicolor:\n", file=f)
     print(df[["SepalLengthCm",]][50:100].describe(), file = f) #using describe() to get analysis of the specidied column and rows
     print(df[["SepalWidthCm",]][50:100].describe(), file = f)
+
 
     #printing from the Petal Lenth & Width columns and only printing the Iris-versicolor data - using code [50:100]
     print("\n\nPetal Length and Petal Width Analysis of Iris-versicolor:\n", file=f)
@@ -114,16 +113,46 @@ with open ("variable_summary.txt" , 'wt') as f: #creating a .txt file  as 'f'whi
     print(df[["PetalWidthCm",]][50:100].describe(), file = f)
 
 
-
     #printing from the Sepal Lenth & Width columns and only printing the Iris-virginica data - using code [100:150]
     print("\n\nSepal Length and Sepal Width Analysis of Iris-virginica:\n", file=f)
     print(df[["SepalLengthCm",]][100:150].describe(), file = f) #using describe() to get analysis of the specidied column and rows
     print(df[["SepalWidthCm",]][100:150].describe(), file = f)
 
+
     #printing from the Sepal Lenth & Width columns and only printing the Iris-virginica data - using code [100:150]
     print("\n\nPetal Length and Petal Width Analysis of Iris-virginica:\n", file=f)
     print(df[["PetalLengthCm",]][100:150].describe(), file = f) #using describe() to get analysis of the specidied column and rows
     print(df[["PetalWidthCm",]][100:150].describe(), file = f)
+
+
+                                        #REGRESSION ANALYSIS
+    print ("\n\n\nRegression Analysis:", file=f)
+    # prediction of Sepal Length given values for Petal Length and Petal Width: 
+    x = df[['PetalLengthCm', 'PetalWidthCm']] #x is the two attributes from the dataframe that im working with to predict the value for y
+    y = df['SepalLengthCm'] #the attribute that I am predicting the value of, using the regression analysis
+
+    regr = linear_model.LinearRegression() 
+    regr.fit(x, y) #run regression on given attributes (x) and output y
+
+
+    predictedSepalLengthCm = regr.predict([[5.5, 2.3]]) #predicting the value of y (Sepal Width), given values for Sepal Length and Sepal Width                                                     
+
+    print("The predicted Sepal Length, given Petal Length of 5.5cm and Petal Width of 2.3cm is: {}" .format (predictedSepalLengthCm), file=f) #outputting the pridected Sepal Width, given the values of Petal Length and Petal Width 
+    #using .format() function to format an output string
+
+
+
+    # prediction of petal width, given values for sepal length and sepal width:
+    x = df[['SepalLengthCm', 'SepalWidthCm']] #x is the two attributes from the dataframe that im working with to predict the value for y
+    y = df['PetalWidthCm'] #the attribute that I am predicting the value of, using the regression analysis
+
+
+
+    predictedPetalWidthCm = regr.predict([[7.7, 3.3]]) #predicting the value of y (Petal Width),
+                                                 #given values of x (Sepal Length & Sepal Width) from index 75 from the Dataframe
+
+    print("The predicted Petal Width, given Sepal Length of 7.7cm and Sepal Width of 3.3cm is: {}" .format (predictedPetalWidthCm), file=f) #outputting the pridected Petal Width, 
+                                                                                                                        #given the values of Petal Sepal Length & Sepal Width
 
 
 
@@ -171,7 +200,7 @@ color_dict = dict({'Iris-setosa':'blue',
                   'Iris-virginica': 'red'}) #saving the colours as a dict {}
 
 
-#using sns.lmplot so that i can 'modify' my plots
+#using sns.lmplot so that i can change the appearence of the plots
 sns.lmplot( x="SepalLengthCm", y="SepalWidthCm", fit_reg=True, hue='Species', legend=True, palette =color_dict, data=df,) #using the color_dict variable here to customise the colours of the 3 plots
 plt.title("Scatterplot of Sepal Length and Sepal Width", color ="green")
 plt.xlabel('Sepal Length cm', color ="green") 
@@ -215,36 +244,6 @@ plt.ylabel('Petal Width cm', color ="green")
 plt.savefig("Sepal Width and Petal Width.png")
 
 
-
-
-                                    #REGRESSION ANALYSIS
-# prediction of Sepal Length given values for Petal Length and Petal Width: 
-x = df[['PetalLengthCm', 'PetalWidthCm']] #x is the two attributes from the dataframe that im working with to predict the value for y
-y = df['SepalLengthCm'] #the attribute that I am predicting the value of, using the regression analysis
-
-regr = linear_model.LinearRegression() 
-regr.fit(x, y) #run regression on given attributes (x) and output y
-
-
-predictedSepalLengthCm = regr.predict([[4.4, 1.4]]) #predicting the value of y (Sepal Width) 
-                                                    #given values of x (Petal Length and Petal width) from index 75 from the Dataframe
-
-#print("Predicted Sepal Length, given Petal Length 4.4cm and Petal Width 1.4cm is: {}" .format (predictedSepalLengthCm)) #outputting the pridected Sepal Width, given the values of Petal Length and Petal Width 
-#using .format() function to format an output string
-
-
-
-# prediction of petal width, given values for speal length and sepal width:
-x = df[['SepalLengthCm', 'SepalWidthCm']] #x is the two attributes from the dataframe that im working with to predict the value for y
-y = df['PetalWidthCm'] #the attribute that I am predicting the value of, using the regression analysis
-
-
-
-predictedPetalWidthCm = regr.predict([[7.7, 3]]) #predicting the value of y (Petal Width),
-                                                    #given values of x (Sepal Length & Sepal Width) from index 75 from the Dataframe
-
-print("Predicted Petal Width, given Sepal Length 7.7cm and Sepal Width 3cm is: {}" .format (predictedPetalWidthCm)) #outputting the pridected Petal Width, 
-                                                                                                                        #given the values of Petal Sepal Length & Sepal Width
 
 
 
