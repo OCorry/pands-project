@@ -53,14 +53,16 @@ I gave the histograms a title and labelled the x and y axes. (tutorials point, 2
 In total, I had four histograms; Sepal Length & Sepal width and Petal Length & petal width. These showed me that the most frequent sepal length was about 5.5cm/5.6 cm. The most frequent sepal width was between 3.0 and 3.2cm. The most frequent petal length was between 1.0 and 1.6cm and petal length between 0.1 and 0.6cm. The most normally distributed histogram was the sepal width. This corresponds to the standard deviation figure I got above of 0.433594 which lies between 0 and 1.
 
 
-Fig 3.1:  					                                                                                                          Fig 3.2:
+Fig 3.1:  					                                                                                                          
+Fig 3.2:
 
 
 ![Sepal Length](https://user-images.githubusercontent.com/98124862/165548664-61a38f23-cda4-409b-a782-446ba3ffb4c1.PNG)  ![Sepal Width](https://user-images.githubusercontent.com/98124862/165548806-c2f82473-302a-47bc-be52-e026102c079d.PNG)
 
 
 
-Fig 3.3:			                                                                                                                Fig 3.4: 
+Fig 3.3:			                                                                                                                
+Fig 3.4: 
 
 ![Petal Length](https://user-images.githubusercontent.com/98124862/165548881-a1c56367-50f9-4643-b751-05f78145680b.PNG)   ![Petal Width](https://user-images.githubusercontent.com/98124862/165548927-74b3e873-f6a0-44b8-9c32-cd30b22ddfc7.PNG)
 
