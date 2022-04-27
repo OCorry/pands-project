@@ -83,21 +83,11 @@ To take a look at the scatterplot of sepal width and petal width of the Iris-ver
 
 However, taking for example the sepal length and sepal width of the Iris-virginica, there is very low correlation between them as the plot is not compact and it does not fit well around the straight line. This means that there is little connection between the sepal length and sepal with in terms of their growth.  
 
-![Capture1](https://user-images.githubusercontent.com/98124862/165564537-b588ab38-fa0c-4e73-9aeb-573e6f157e81.PNG)
+![Capture1](https://user-images.githubusercontent.com/98124862/165567109-af264d72-c3e6-4d50-80d4-2e9e2d652803.PNG)
 
+![Capture2](https://user-images.githubusercontent.com/98124862/165567147-7b978d7e-5a48-48b4-951e-12d50e3180db.PNG)
 
-![Capture2](https://user-images.githubusercontent.com/98124862/165564563-a4958509-7263-4641-bac4-60676c9cfed3.PNG)
-
-
-![Capture3](https://user-images.githubusercontent.com/98124862/165564580-cd1eed56-c179-488e-a535-883e0749cbcc.PNG)
-
-
-
-
-
-
-
-
+![Capture3](https://user-images.githubusercontent.com/98124862/165567193-aacca54f-fede-4d40-a852-a8185dd26cce.PNG)
 
 
 
