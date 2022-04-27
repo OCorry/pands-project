@@ -84,13 +84,13 @@ To take a look at the scatterplot of sepal width and petal width of the Iris-ver
 However, taking for example the sepal length and sepal width of the Iris-virginica, there is very low correlation between them as the plot is not compact and it does not fit well around the straight line. This means that there is little connection between the sepal length and sepal with in terms of their growth.  
 
 
-![Petal Length and Sepal Length](https://user-images.githubusercontent.com/98124862/165558319-51a2299a-02f9-4645-aa23-d2b871b376cf.PNG) ![Petal Length and Petal Width](https://user-images.githubusercontent.com/98124862/165558409-383685f1-e20c-4933-a9bf-78b845d181c6.PNG)
+![Petal Length and Sepal Length](https://user-images.githubusercontent.com/98124862/165558319-51a2299a-02f9-4645-aa23-d2b871b376cf.PNG)![Petal Length and Petal Width](https://user-images.githubusercontent.com/98124862/165558409-383685f1-e20c-4933-a9bf-78b845d181c6.PNG)
 
 
-![Petal Length and Sepal Width](https://user-images.githubusercontent.com/98124862/165558468-365b81d2-b751-40fa-b11d-843873011521.PNG) ![Sepal Length and Petal Width](https://user-images.githubusercontent.com/98124862/165558500-4e81c1d4-f317-4423-bdbd-bacbff666d0b.PNG)
+![Petal Length and Sepal Width](https://user-images.githubusercontent.com/98124862/165558468-365b81d2-b751-40fa-b11d-843873011521.PNG)![Sepal Length and Petal Width](https://user-images.githubusercontent.com/98124862/165558500-4e81c1d4-f317-4423-bdbd-bacbff666d0b.PNG)
 
 
-![Sepal Length and Sepal Width](https://user-images.githubusercontent.com/98124862/165558541-376d2ed7-ff72-4a13-a062-08ee7413e051.PNG) ![Sepal Width and Petal Width](https://user-images.githubusercontent.com/98124862/165558582-1081527f-8232-4ad6-9727-f0a936dc5886.PNG)
+![Sepal Length and Sepal Width](https://user-images.githubusercontent.com/98124862/165558541-376d2ed7-ff72-4a13-a062-08ee7413e051.PNG)![Sepal Width and Petal Width](https://user-images.githubusercontent.com/98124862/165558582-1081527f-8232-4ad6-9727-f0a936dc5886.PNG)
 
 
 
