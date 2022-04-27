@@ -83,15 +83,19 @@ To take a look at the scatterplot of sepal width and petal width of the Iris-ver
 
 However, taking for example the sepal length and sepal width of the Iris-virginica, there is very low correlation between them as the plot is not compact and it does not fit well around the straight line. This means that there is little connection between the sepal length and sepal with in terms of their growth.  
 
-Fig 4.1						Fig4.2
-![Scatter Sepal Width and Sepal Length](https://user-images.githubusercontent.com/98124862/165551374-b325487d-47ae-4c1d-b9ed-91ee183ca927.PNG)     ![Scatter-Petal Length and Petal Width](https://user-images.githubusercontent.com/98124862/165551436-cefc3215-e4c1-4de9-aad1-d53be725fb13.PNG)
+
+![Petal Length and Sepal Length](https://user-images.githubusercontent.com/98124862/165558319-51a2299a-02f9-4645-aa23-d2b871b376cf.PNG) ![Petal Length and Petal Width](https://user-images.githubusercontent.com/98124862/165558409-383685f1-e20c-4933-a9bf-78b845d181c6.PNG)
+
+
+![Petal Length and Sepal Width](https://user-images.githubusercontent.com/98124862/165558468-365b81d2-b751-40fa-b11d-843873011521.PNG) ![Sepal Length and Petal Width](https://user-images.githubusercontent.com/98124862/165558500-4e81c1d4-f317-4423-bdbd-bacbff666d0b.PNG)
+
+
+![Sepal Length and Sepal Width](https://user-images.githubusercontent.com/98124862/165558541-376d2ed7-ff72-4a13-a062-08ee7413e051.PNG) ![Sepal Width and Petal Width](https://user-images.githubusercontent.com/98124862/165558582-1081527f-8232-4ad6-9727-f0a936dc5886.PNG)
 
 
 
-![Scatter-Petal Length and Petal Width](https://user-images.githubusercontent.com/98124862/165551521-81479dd8-caa7-4efe-aa72-7de29bd8fee3.PNG)    ![Scatter-Petal Length and Sepal Width](https://user-images.githubusercontent.com/98124862/165551578-116f452f-64c2-497c-880d-e0fd20514363.PNG)
 
 
-![Scatter-Petal Width and Sepal Length](https://user-images.githubusercontent.com/98124862/165551650-805f09f1-764c-47e6-9289-66e2a8e9b26b.PNG)    ![Scatter-Petal Width and Sepal Width](https://user-images.githubusercontent.com/98124862/165551755-eca35a01-e5d0-487c-912e-d38ef1f975d6.PNG)
 
 
 
