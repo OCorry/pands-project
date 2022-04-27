@@ -36,7 +36,7 @@ This function also outputs the maximum and minimum values for the 4 floating poi
 
 I also used different code to specifically print out the mean, standard deviation and median of each of the Iris flowers’ four attributes. From (Zach, 2021), I sourced code to get the standard deviation of a column of data and I stored the code as variable std_dev. For the mean and median (EasyTweaks, 2022), I stored the code as mean and median respectively. I used the round() function here also to round the output to 2 decimal places.  In addition, I used the .format() function to format the output as string. I inputted file=f as second argument to save the output to the .txt file.
 
-Analysis of the three Individual Iris Flower types:
+### Analysis of the three Individual Iris Flower types:
 Using the df.iloc() function (w3schools, 2022), I was able to slice out the data for each of the three Iris flower types individually. To do this, I used code df.iloc([0:50]) to allow for the inclusion of the last row of data of the Iris-setosa to be included. Similarly, I included index 50 through to index 100 to allow for the inclusion of all the rows of the Iris-versicolor data and finally, index 100 through to 150 to include all rows of data for the Iris-virginica.  Again, I saved this output to the analysis_summary.txt.
 
 Next, I wanted to focus on analysing the data for each particular Iris type. To analyse the individual Iris Flowers’ Petals and Sepals, I used a combination of code from two sources. Firstly, to get the statistical data from a particular column, I used code from (Miller, 2022). However, using this alone was going to take the data from the whole column but I wanted to single out the data for each Iris type individually. 
@@ -53,16 +53,15 @@ I gave the histograms a title and labelled the x and y axes. (tutorials point, 2
 In total, I had four histograms; Sepal Length & Sepal width and Petal Length & petal width. These showed me that the most frequent sepal length was about 5.5cm/5.6 cm. The most frequent sepal width was between 3.0 and 3.2cm. The most frequent petal length was between 1.0 and 1.6cm and petal length between 0.1 and 0.6cm. The most normally distributed histogram was the sepal width. This corresponds to the standard deviation figure I got above of 0.433594 which lies between 0 and 1.
 
 
-Fig 3.1:  					                                                                                                          
-                                                                                                                         Fig 3.2:
+Fig 3.1:                                                                                                                 Fig 3.2:
 
 
 ![Sepal Length](https://user-images.githubusercontent.com/98124862/165548664-61a38f23-cda4-409b-a782-446ba3ffb4c1.PNG)  ![Sepal Width](https://user-images.githubusercontent.com/98124862/165548806-c2f82473-302a-47bc-be52-e026102c079d.PNG)
 
 
 
-Fig 3.3:			                                                                                                                
-                                                                                                                          Fig 3.4: 
+Fig 3.3:                                                                                                                  Fig3.4:			                                                                                                                
+                                                                                                                           
 
 ![Petal Length](https://user-images.githubusercontent.com/98124862/165548881-a1c56367-50f9-4643-b751-05f78145680b.PNG)   ![Petal Width](https://user-images.githubusercontent.com/98124862/165548927-74b3e873-f6a0-44b8-9c32-cd30b22ddfc7.PNG)
 
