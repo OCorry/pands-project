@@ -54,7 +54,7 @@ In total, I had four histograms; Sepal Length & Sepal width and Petal Length & p
 
 
 Fig 3.1:  					                                                                                                          
-Fig 3.2:
+                                                                                                                         Fig 3.2:
 
 
 ![Sepal Length](https://user-images.githubusercontent.com/98124862/165548664-61a38f23-cda4-409b-a782-446ba3ffb4c1.PNG)  ![Sepal Width](https://user-images.githubusercontent.com/98124862/165548806-c2f82473-302a-47bc-be52-e026102c079d.PNG)
@@ -62,7 +62,7 @@ Fig 3.2:
 
 
 Fig 3.3:			                                                                                                                
-Fig 3.4: 
+                                                                                                                          Fig 3.4: 
 
 ![Petal Length](https://user-images.githubusercontent.com/98124862/165548881-a1c56367-50f9-4643-b751-05f78145680b.PNG)   ![Petal Width](https://user-images.githubusercontent.com/98124862/165548927-74b3e873-f6a0-44b8-9c32-cd30b22ddfc7.PNG)
 
