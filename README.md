@@ -103,6 +103,9 @@ However, taking for example the sepal length and sepal width of the Iris-virgini
 
 
 
+
+
+
 ## Conclusion:
 
 From the scatter plots in particular, it would appear the that the data for the Iris-setosa petals and sepals is the most correlated as the scatter plots are quite clusterd around the straight line. The Iris-versicolour and Iris- virginica data however, is less correlated as the scatter plots are generally quite dispersed. I found that while the standard deviation of each attribute from the dataframe as a whole (all 150 rows together) was generally quite normal-ranging between 0and 1- the histograms did not reflect this for the Petal Length and Petal Width. 
