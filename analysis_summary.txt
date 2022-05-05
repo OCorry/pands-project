@@ -1,4 +1,4 @@
-							Analysis on each of the 3 Iris flowers characteristics:
+						Analysis on each of the 3 Iris flowers characteristics:
 
 Shape:
  (150, 6)

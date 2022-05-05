@@ -1,10 +1,11 @@
-#Program that reads the Iris Dataset into Python and run analysis on the dataset
+#Program that reads the Iris Dataset into Python and run data analysis on the dataset
+#Using libraries imported to python 
 #Author: Orla Corry 
 
 
 #importing libraries 
 
-import pandas as pd  #to analysie data that is in tabular form
+import pandas as pd  #to analyse data that is in tabular form
 import numpy as np #for working with data stored as arrays
 import matplotlib.pyplot as plt #plotting data 
 import seaborn as sns #plotting data 
@@ -12,21 +13,22 @@ from sklearn import linear_model #regression analysis
 
 
 #reading in the dataset
-filename =("iris.csv")
+filename =("iris.csv") #storing the csv file as variable 'filename' for easier access
 df = pd.read_csv (filename) #reading in the file to Python using Pandas
-#print (df)
-#print(df.to_string()) #use this code to print the whole dataframe (df) rather than just the first 5 & last 5 rows
+#print (df) #print the first 5 and last 5 rows of the dataframe
+#print(df.to_string()) #this code will print the whole dataframe (df) rather than just the first 5 & last 5 rows
                     
 
 
 
 with open ("variable_summary.txt" , 'wt') as f: #creating a .txt file  as 'f'which i can write to 
     #from now on the file will be referred to as 'f'
+    #using with open here so that the file closes automatically again - i do not have to input a command to close it again 
 
     shape = df.shape #storing as variable shape
     describe = df.describe() #storing as variable describe
 
-    f.write('\t\t\t\t\t\t\tAnalysis on each of the 3 Iris flowers characteristics:') #Heading-using \t to tab to centre 
+    f.write('\t\t\t\t\t\tAnalysis on each of the 3 Iris flowers characteristics:') #Heading-using \t to tab to centre 
     print("\n\nShape:\n", shape, file =f) #\n here so there is 2 lines space from the heading 
     #the first argument is the command shape and the second argument is to send it to file 'f'
     print ("\n\nDataframe Description:\n",  describe, file =f) #/n after description so there is a break between 'Description' and the output
@@ -35,11 +37,11 @@ with open ("variable_summary.txt" , 'wt') as f: #creating a .txt file  as 'f'whi
 
 
     #Analysis on Sepal Length
-    mean = round(df["SepalLengthCm"].mean(),2)
-    std_dev = round(df["SepalLengthCm"].std(),2) #using round() function to round output to 2 decimal places 
+    mean = round(df["SepalLengthCm"].mean(),2) #using round() function to round output to 2 decimal places 
+    std_dev = round(df["SepalLengthCm"].std(),2) 
     median = round(df["SepalLengthCm"].median(),2)
 
-    print ("\n\n\nAnalysis on Sepal Length of three Iris types combined:", file=f)
+    print ("\n\n\nAnalysis on Sepal Length of three Iris types combined:", file=f) #sending output to file 'f'
     print ("The mean of Sepal Length is: {}cm".format(mean), file=f)
     print ("The standard deviation of Sepal Length is: {}cm".format(std_dev), file=f)
     print ("The median of Sepal Length is: {}cm".format(median), file=f)
@@ -88,7 +90,7 @@ with open ("variable_summary.txt" , 'wt') as f: #creating a .txt file  as 'f'whi
     print(df.iloc[100:150], file =f) #taking data from index location 100 to index 150 to allow for inlcusion of data from last row 
 
 
-                                        # DATA ANALYSIS ON THE INDIVIDUAL IRIS TYPES (SEPALS AND PETALS) 
+                                        #DATA ANALYSIS ON THE INDIVIDUAL IRIS TYPES (SEPALS AND PETALS) 
 
     #printing from the Sepal Lenth & Width columns and only printing the Iris-setosa data - using code [0:50]
     print("\n\n\nSepal Length and Sepal Width Analysis of Iris-setosa:\n",file=f)
@@ -201,7 +203,7 @@ plt.savefig("Petal Width.png")
                                    
 color_dict = dict({'Iris-setosa':'orange', 
                   'Iris-versicolor':'purple',
-                  'Iris-virginica': 'red'}) #saving the colours as a dict {}
+                  'Iris-virginica': 'red'}) #saving the colours as a dict {} so i can input easily in my code below 
 
 
 #using sns.lmplot so that i can change the appearence of the plots
