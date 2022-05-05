@@ -249,7 +249,7 @@ sns.lmplot( x="SepalWidthCm", y="PetalWidthCm", fit_reg=True, hue='Species', leg
 plt.title("Scatterplot of Sepal Width and Petal Width", color ="green")
 plt.xlabel('Sepal Width cm', color ="green")
 plt.ylabel('Petal Width cm', color ="green")
-plt.show()
+#plt.show()
 #plt.close()
 plt.savefig("Sepal Width and Petal Width.png")
 
