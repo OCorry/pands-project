@@ -4,7 +4,7 @@ Before beginning the task, I set about doing some research into Fisher himself a
 Born in England on the 17th of February 1890, Fisher was a statistician, geneticist and eugenicist (The Royal Society | Scient in The Making, n.d.).The data for this dataset was gathered by a botanist named Edgar Anderson and the dataset was then established by Fisher in the early 20th Century. The data set contains 150 observations in total, allowing for 50 samples of the three different types of Iris Flower; Setosa, Virginica and Versicolor. On these, then he focused on four attributes or variables from each species Sepal Length, Sepal Width, Petal Length and Petal Width (Qureshi, 2021). 
 
 ## Setting up the Environment:
-For this project I needed the relevant programming environment on my PC. This included two software packages; namely Cmder and VS Code. I also needed to create a repository on my Github to allow me to push up my work so that it could be accessed from another machine.
+For this project I needed the relevant programming environment on my PC. This included two software packages; namely Cmder and Visual Studio (VS) Code. I also needed to create a repository on my Github to allow me to push up my work so that it could be accessed from another machine.
 I set up my pands-project repository on Github and cloned it to my machine using Cmder. I made sure that my repository on Github was set to public for public viewing. I then downloaded a copy of the dataset from Kaggle,(Singh, 2018) as an excel, comma separated values (csv) file and saved this in my pands-project directory. In VS code inside of the pands-project directory, I created a program called analysis.py for my code. 
 
 ## Research and analysis:
@@ -48,8 +48,14 @@ So working these two pieces of code together, I was able to analyse the data of 
 I carried out some regression analysis on the Iris flowers’ sepals and petals. I sourced code for this from (W3schools, 2022). Using this, I was able to input values for the Sepal Length and Sepal Width to predict what the size of the petal length would be for example. Using Sepal length, 7.7cm and Sepal Width 3.3 for example, the regression analysis predicted that the Petal length would be 7.3cm. Again, I used file=f argument to save to the .txt file. 
 
 ### Histograms: 
-Next I worked on histograms to give a visual description of the four attributes of the Iris flowers. I created each histogram using df.hist() and inputted different parameters to make the them more readable. (pandas, 2022) & (ImportanceOfBeingErnest, 2017) .
+Next I worked on histograms to give a visual description of the four attributes of the Iris flowers. I created each histogram using df.hist() and inputted different parameters to make the them more readable. (pandas, 2022) & (ImportanceOfBeingErnest, 2017).
+
+
 I gave the histograms a title and labelled the x and y axes. (tutorials point, 2022). I used the plt.show() command to print the output in the terminal (I commented this command out so that it didn’t print each time the program ran). I also used the plt.savefig(“filename.png”) to save the output as a .png file to push up to Github. 
+
+I found that using plt.show() just once would print out all of the plots generated from the code used in the lines above it. To allow the user to control what plots they wanted to print, I used code plt.close() at the end of each block of code for each individual plot (Geeks for Geeks, 2020). The user could then comment out this code, depending on which plot they wanted printed in the terminal. 
+
+
 In total, I had four histograms; Sepal Length & Sepal width and Petal Length & petal width. These showed me that the most frequent sepal length was about 5.5cm/5.6 cm. The most frequent sepal width was between 3.0 and 3.2cm. The most frequent petal length was between 1.0 and 1.6cm and petal length between 0.1 and 0.6cm. The most normally distributed histogram was the sepal width. This corresponds to the standard deviation figure I got above of 0.433594 which lies between 0 and 1.
 
 <img src="./Sepal Length.png" width =400 height =400>               <img src="./Sepal Width.png" width =400 height =400>  
@@ -74,7 +80,7 @@ In total, I had four histograms; Sepal Length & Sepal width and Petal Length & p
 Finally, I generated 6 scatterplots for the 6 variations of pairs of variables:
 Sepal Length & Sepal Width, Petal Length and Petal Width, Sepal Length and Petal Width, Petal Length and Sepal Width, Petal Length and Sepal Length, Sepal Width and Petal width.
 
-To create the scatterplots, I used sns.impolot() (Gallery, 2018). Using this code allowed me to modify the appearance of the plot. To include the “Species” variable so that I could work with it, I used ‘hue’. I included a fit line to give more of an idea of how linear the scatterplot was. To include this, I inputted ‘fit_reg=True’. I also included a legend to distinguish which plot was for which Iris type. I labelled the x and y axes as appropriate for each scatterplot.
+Using Seaborne, to create the scatterplots, I used sns.impolot() (Gallery, 2018). Using this code allowed me to modify the appearance of the plot. To include the “Species” variable so that I could work with it, I used ‘hue’. I included a fit line to give more of an idea of how linear the scatterplot was. To include this, I inputted ‘fit_reg=True’. I also included a legend to distinguish which plot was for which Iris type. I labelled the x and y axes as appropriate for each scatterplot.
 
 From (cmdline, 2009), I sourced code to change the colours of each of the three plots on each scatterplot, again to allow for easier interpretation of the plot. The colours were inputted as a dict{} and then stored as variable color_dict. This made it easier as I could just simply input color_dict in my code. 
 
@@ -89,6 +95,12 @@ However, taking for example the sepal length and sepal width of the Iris-virgini
 
 
 <img src="./Sepal Length and SepalWidth.png" width =400 height =400>       <img src="./Sepal Width and Petal Width.png" width =400 height =400>
+
+
+
+
+
+
 
 
 ## Conclusion:
@@ -109,11 +121,6 @@ Available at: https://stackoverflow.com/questions/36571560/directing-print-outpu
 [Accessed 13 April 2022].
 
 
-Christiansen, A., 2016. Directing print output to a .txt file. [Online] 
-Available at: https://stackoverflow.com/questions/36571560/directing-print-output-to-a-txt-file
-[Accessed 23 April 2022].
-
-
 cmdline, 2009. How To Specify Colors to Scatter Plots in Python. [Online] 
 Available at: https://cmdlinetips.com/2019/04/how-to-specify-colors-to-scatter-plots-in-python/
 [Accessed 23 April 2022].
@@ -132,6 +139,11 @@ Available at: https://statisticsbyjim.com/graphs/scatterplots/
 Gallery, P. G., 2018. Use categorical variable to color scatterplot in seaborn. [Online] 
 Available at: https://python-graph-gallery.com/43-use-categorical-variable-to-color-scatterplot-seaborn
 [Accessed 23 April 2022].
+
+
+Geeks for Geeks, 2020. Matplotlib.pyplot.close() in Python. [Online] 
+Available at: https://www.geeksforgeeks.org/matplotlib-pyplot-close-in-python/
+[Accessed 5 May 2022].
 
 
 GeeksforGeeks, 2021. Python – Basics of Pandas using Iris Dataset. [Online] 
