@@ -1,32 +1,36 @@
+#pands-project 2022
+#Author: Orla Corry 
+<pre>
+
 # Introduction:
 The objective of this project was to obtain a copy of Ronald Fisher’s Iris dataset and carry out some analysis on the data contained in it using various libraries imported into Python.
 Before beginning the task, I set about doing some research into Fisher himself and the history of the Iris dataset. 
 Born in England on the 17th of February 1890, Fisher was a statistician, geneticist and eugenicist (The Royal Society | Scient in The Making, n.d.).The data for this dataset was gathered by a botanist named Edgar Anderson and the dataset was then established by Fisher in the early 20th Century. The data set contains 150 observations in total, allowing for 50 samples of the three different types of Iris Flower; Setosa, Virginica and Versicolor. On these, then he focused on four attributes or variables from each species Sepal Length, Sepal Width, Petal Length and Petal Width (Qureshi, 2021). 
+<pre>
 
 ## Setting up the Environment:
 For this project I needed the relevant programming environment on my PC. This included two software packages; namely Cmder and Visual Studio (VS) Code. I also needed to create a repository on my Github to allow me to push up my work so that it could be accessed from another machine.
 I set up my pands-project repository on Github and cloned it to my machine using Cmder. I made sure that my repository on Github was set to public for public viewing. I then downloaded a copy of the dataset from Kaggle,(Singh, 2018) as an excel, comma separated values (csv) file and saved this in my pands-project directory. In VS code inside of the pands-project directory, I created a program called analysis.py for my code. 
+<pre>
 
 ## Research and analysis:
 I imported the relevant libraries needed for the data analysis, namely; Pandas (imported as pd), Numpy (imported as np), Matplotlib (imported as plt) and Seaborn (imported as sns).  Pandas is used for analysing data in tabular form, as I was using data from an Excel sheet, I could use this. Numpy is used for working with arrays and while Matplotlib is used for plotting data, Seaborn provides more of a variety of visualisation patterns with the data (Misal, 2019) . For some regression analysis, I also used the sklearn module and imported linear model from it (w3schools, 2022).
 To start off using Pandas, I imported the Iris dataframe in csv format, storing it as ‘df’ for easier access when doing my analysis. This printed out the first 5 rows and last 5 rows of data only. I also found that the whole dataset could be printed in the terminal using  code print(df.to_string) (w3schools, 2022) I commented both of these out however, as I didn’t need them to print in the terminal each time I ran the program. 
-
-
+<pre>
 I needed to find a way of directing the output to the .txt file rather than just printing it to the terminal. I found how to do this from (Christiansen, 2016), where in his case, the first argument is what the user wants to input into the .txt file and the second argument is to save it to file=f. However, in my data analyses, the file=f argument wasn’t always the second argument as some of my commands had multiple arguments.
 
 Using the with open () command, I created a text file called variable_summary.txt in which I could save some of my output to. I opened this .txt file in write text (wt) mode as I needed to be able to write to the file. I did not use append mode as it kept adding changes that I made rather than re-writing them and deleting obsolete output that I no longer wanted. I saved this file as ‘f’ to represent the file to make it more accessible when sending the output to the .txt file. 
+<pre>
 
 ### Analysis of the Dataframe:
 Next, I set about researching what types of analyses I could carry out on the dataset. I sourced some code from (GeeksforGeeks, 2022). 
 Using Pandas I carried out a df.shape() command to establish to structure of the dataframe. Fig. 1 provides output confirming that the dataframe contains 150 rows of data and 6 column names (or attributes). 
 
-Fig 1:
- 
+
 ![fig 1](https://user-images.githubusercontent.com/98124862/165548379-559889eb-8240-4690-b54b-feeb04eb3b23.png)
 
 Next, using the describe() function I printed a number of statistics of all three Iris types from the dataframe: 
-Fig 2:
- 
+
 ![fig 2](https://user-images.githubusercontent.com/98124862/165548443-497b0cc2-f2db-4a01-9689-37b9c205ac54.png)
  
 
@@ -35,6 +39,7 @@ In this dataframe, the standard deviation of Sepal Length, Sepal Width, Petal le
 This function also outputs the maximum and minimum values for the 4 floating point attributes.  
 
 I also used different code to specifically print out the mean, standard deviation and median of each of the Iris flowers’ four attributes. From (Zach, 2021), I sourced code to get the standard deviation of a column of data and I stored the code as variable std_dev. For the mean and median (EasyTweaks, 2022), I stored the code as mean and median respectively. I used the round() function here also to round the output to 2 decimal places.  In addition, I used the .format() function to format the output as string. I inputted file=f as second argument to save the output to the .txt file.
+<pre>
 
 ### Analysis of the three Individual Iris Flower types:
 Using the df.iloc() function (w3schools, 2022), I was able to slice out the data for each of the three Iris flower types individually. To do this, I used code df.iloc([0:50]) to allow for the inclusion of the last row of data of the Iris-setosa to be included. Similarly, I included index 50 through to index 100 to allow for the inclusion of all the rows of the Iris-versicolor data and finally, index 100 through to 150 to include all rows of data for the Iris-virginica.  Again, I saved this output to the analysis_summary.txt.
@@ -42,10 +47,11 @@ Using the df.iloc() function (w3schools, 2022), I was able to slice out the data
 Next, I wanted to focus on analysing the data for each particular Iris type. To analyse the individual Iris Flowers’ Petals and Sepals, I used a combination of code from two sources. Firstly, to get the statistical data from a particular column, I used code from (Miller, 2022). However, using this alone was going to take the data from the whole column but I wanted to single out the data for each Iris type individually. 
 To do this, I sourced code from (GeeksforGeeks, 2021). I singled out the data relating to the Iris-setosa from index 0 to 50 (to allow for the inclusion of the last row of this Iris type).  I did the same for the other two; index 50 to 100 (to include the last row of this type) for the Iris-versicolor and index 100 to 150 (to include the last row of this type) for the Iris-virginica. 
 So working these two pieces of code together, I was able to analyse the data of the three Iris flowers individually. For example the first one, from the dataframe (df) I used .describe() function on the Sepal Length column only and restricted the column so that the data would only be taken from the Iris-setosa flower. I did this by inputting [0:50] so that index 0 through to index 50, to allow for row 51 to be included also. From this then I was able to get the count, mean, standard deviation, minimum and maximum values for each of the Iris flowers individually.  Again, I used the file =f argument to save to the analysis_summary.txt file.
-
+<pre>
 
 ### Regression Analysis:
 I carried out some regression analysis on the Iris flowers’ sepals and petals. I sourced code for this from (W3schools, 2022). Using this, I was able to input values for the Sepal Length and Sepal Width to predict what the size of the petal length would be for example. Using Sepal length, 7.7cm and Sepal Width 3.3 for example, the regression analysis predicted that the Petal length would be 7.3cm. Again, I used file=f argument to save to the .txt file. 
+<pre>
 
 ### Histograms: 
 Next I worked on histograms to give a visual description of the four attributes of the Iris flowers. I created each histogram using df.hist() and inputted different parameters to make the them more readable. (pandas, 2022) & (ImportanceOfBeingErnest, 2017).
@@ -64,17 +70,8 @@ In total, I had four histograms; Sepal Length & Sepal width and Petal Length & p
  
 <img src="./Petal Length.png" width =400 height =400>                <img src="./Petal Width.png" width =400 height =400>
 
+<pre>
 
-
-                                                                                                                                                                                                                      
-                                                                                                                           
-
-
-
-
-
-
-  
 ### Scatterplots:
 
 Finally, I generated 6 scatterplots for the 6 variations of pairs of variables:
@@ -94,13 +91,8 @@ However, taking for example the sepal length and sepal width of the Iris-virgini
 <img src="./Petal Length and Sepal Width.png" width =400 height =400>     <img src="./Sepal Length and Petal Width.png" width =400 height =400>  
 
 
-<img src="./Sepal Length and SepalWidth.png" width =400 height =400>       <img src="./Sepal Width and Petal Width.png" width =400 height =400>
-
-
-
-
-
-
+<img src="./Sepal Length and SepalWidth.png" width =400 height =400>      <img src="./Sepal Width and Petal Width.png" width =400 height =400>
+<pre>
 
 
 ## Conclusion:
@@ -108,10 +100,7 @@ However, taking for example the sepal length and sepal width of the Iris-virgini
 From the scatter plots in particular, it would appear the that the data for the Iris-setosa petals and sepals is the most correlated as the scatter plots are quite clusterd around the straight line. The Iris-versicolour and Iris- virginica data however, is less correlated as the scatter plots are generally quite dispersed. I found that while the standard deviation of each attribute from the dataframe as a whole (all 150 rows together) was generally quite normal-ranging between 0and 1- the histograms did not reflect this for the Petal Length and Petal Width. 
 I found from this project that there is a vast range of different analysis that can be done on this dataframe despite its small size. From my research, I found that there are numerous different types and structures of code that can be used for the same type of analysis. 
 
-
-
-
-
+<pre>
 
 # Bibliography
 
