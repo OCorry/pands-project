@@ -66,6 +66,8 @@ In total, I had four histograms; Sepal Length & Sepal width and Petal Length & p
 
 
 
+
+
   
 ### Scatterplots:
 
@@ -80,12 +82,7 @@ To take a look at the scatterplot of sepal width and petal width of the Iris-ver
 
 However, taking for example the sepal length and sepal width of the Iris-virginica, there is very low correlation between them as the plot is not compact and it does not fit well around the straight line. This means that there is little connection between the sepal length and sepal with in terms of their growth.  
 
-![Capture1](https://user-images.githubusercontent.com/98124862/165567109-af264d72-c3e6-4d50-80d4-2e9e2d652803.PNG)
-
-![Capture2](https://user-images.githubusercontent.com/98124862/165567147-7b978d7e-5a48-48b4-951e-12d50e3180db.PNG)
-
-![Capture3](https://user-images.githubusercontent.com/98124862/165567193-aacca54f-fede-4d40-a852-a8185dd26cce.PNG)
-
+<img src="./Petal Lenght and Petal Width.png" width =400 height =400>         
 
 
 
