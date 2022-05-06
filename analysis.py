@@ -74,19 +74,19 @@ with open ("variable_summary.txt" , 'wt') as f: #creating a .txt file  as 'f'whi
     print ("\n\n\nAnalysis on Petal Width of three Iris types combined:", file=f)
     print ("The mean of Petal Width is: {}cm".format(mean), file=f)
     print ("The standard deviation of Petal Width is: {}cm".format(std_dev), file=f)
-    print ("The Median of Petal Width is: {}cm".format(median), file=f,)
+    print ("The Median of Petal Width is: {}cm".format(median), file=f)
 
 
 
 
                                             #SLICED DATA FOR EACH IRIS TYPE
-    print("\n\n\nIris-setosa data (sliced from dataframe):", file =f) 
+    print("\n\n\n\n\n\t\tIris-setosa data (sliced from dataframe):\n", file =f) 
     print(df.iloc[0:50], file =f) #taking data from index location 0 to index 50 to allow for inlcusion of data from last row 
 
-    print("\n\nIris-versicolor data (sliced from dataframe):", file =f)
+    print("\n\n\n\t\tIris-versicolor data (sliced from dataframe):\n", file =f)
     print(df.iloc[50:100], file =f) #taking data from index location 50 to index 100 to allow for inlcusion of data from last row 
 
-    print("\n\nIris-virginica data (sliced from dataframe):", file =f)
+    print("\n\n\n\t\tIris-virginica data (sliced from dataframe):\n", file =f)
     print(df.iloc[100:150], file =f) #taking data from index location 100 to index 150 to allow for inlcusion of data from last row 
 
 
@@ -128,8 +128,10 @@ with open ("variable_summary.txt" , 'wt') as f: #creating a .txt file  as 'f'whi
 
 
                                         #REGRESSION ANALYSIS
+    #using the mean value of 2 attributes, predict the mean value of another attribute:
+
     print ("\n\n\nRegression Analysis:", file=f)
-    # prediction of Sepal Length given values for Petal Length and Petal Width: 
+    # prediction of mean Sepal Length given the mean values for Petal Length and Petal Width: 
     x = df[['PetalLengthCm', 'PetalWidthCm']] #x is the two attributes from the dataframe that im working with to predict the value for y
     y = df['SepalLengthCm'] #the attribute that I am predicting the value of, using the regression analysis
 
@@ -137,26 +139,26 @@ with open ("variable_summary.txt" , 'wt') as f: #creating a .txt file  as 'f'whi
     regr.fit(x, y) #run regression on given attributes (x) and output y
 
 
-    predictedSepalLengthCm = regr.predict([[5.5, 2.3]]) #predicting the value of y (Sepal Width), given values for Sepal Length and Sepal Width                                                     
+    predictedSepalLengthCm = regr.predict([[3.75, 1.19]]) #predicting the mean value of y (Sepal Length), given the mean values for Petal Length and Petal Width                                                     
 
-    print("The predicted Sepal Length, given Petal Length of 5.5cm and Petal Width of 2.3cm is: {}" .format (predictedSepalLengthCm), file=f) #outputting the pridected Sepal Width, given the values of Petal Length and Petal Width 
+    print("The predicted mean Sepal Length, given Petal Length of 3.75cm and Petal Width of 1.19cm is: {}" .format (predictedSepalLengthCm), file=f) #outputting the pridected Sepal Width, given the values of Petal Length and Petal Width 
     #using .format() function to format an output string
 
 
 
-    # prediction of petal width, given values for sepal length and sepal width:
+    # prediction of mean petal width, given the mean values for sepal length and sepal width:
     x = df[['SepalLengthCm', 'SepalWidthCm']] #x is the two attributes from the dataframe that im working with to predict the value for y
     y = df['PetalWidthCm'] #the attribute that I am predicting the value of, using the regression analysis
 
 
 
-    predictedPetalWidthCm = regr.predict([[7.7, 3.3]]) #predicting the value of y (Petal Width),
-                                                 #given values of x (Sepal Length & Sepal Width) from index 75 from the Dataframe
+    predictedPetalWidthCm = regr.predict([[5.84, 3.05]]) #predicting the mean value of y (Petal Width),
+                                                 #given the mean values of x (Sepal Length & Sepal Width) from index 75 from the Dataframe
 
-    print("The predicted Petal Width, given Sepal Length of 7.7cm and Sepal Width of 3.3cm is: {}" .format (predictedPetalWidthCm), file=f) #outputting the pridected Petal Width, 
+    print("The predicted mean Petal Width, given Sepal Length of 5.84cm and Sepal Width of 3.05cm is: {}" .format (predictedPetalWidthCm), file=f) #outputting the pridected Petal Width, 
                                                                                                                         #given the values of Petal Sepal Length & Sepal Width
 
-
+    
 
 
                                                     #HISTOGRAMS

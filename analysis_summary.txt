@@ -45,7 +45,10 @@ The Median of Petal Width is: 1.3cm
 
 
 
-Iris-setosa data (sliced from dataframe):
+
+
+		Iris-setosa data (sliced from dataframe):
+
     Id  SepalLengthCm  SepalWidthCm  PetalLengthCm  PetalWidthCm      Species
 0    1            5.1           3.5            1.4           0.2  Iris-setosa
 1    2            4.9           3.0            1.4           0.2  Iris-setosa
@@ -99,7 +102,9 @@ Iris-setosa data (sliced from dataframe):
 49  50            5.0           3.3            1.4           0.2  Iris-setosa
 
 
-Iris-versicolor data (sliced from dataframe):
+
+		Iris-versicolor data (sliced from dataframe):
+
      Id  SepalLengthCm  SepalWidthCm  PetalLengthCm  PetalWidthCm          Species
 50   51            7.0           3.2            4.7           1.4  Iris-versicolor
 51   52            6.4           3.2            4.5           1.5  Iris-versicolor
@@ -153,7 +158,9 @@ Iris-versicolor data (sliced from dataframe):
 99  100            5.7           2.8            4.1           1.3  Iris-versicolor
 
 
-Iris-virginica data (sliced from dataframe):
+
+		Iris-virginica data (sliced from dataframe):
+
       Id  SepalLengthCm  SepalWidthCm  PetalLengthCm  PetalWidthCm         Species
 100  101            6.3           3.3            6.0           2.5  Iris-virginica
 101  102            5.8           2.7            5.1           1.9  Iris-virginica
@@ -343,5 +350,5 @@ max         2.50000
 
 
 Regression Analysis:
-The predicted Sepal Length, given Petal Length of 5.5cm and Petal Width of 2.3cm is: [6.43662341]
-The predicted Petal Width, given Sepal Length of 7.7cm and Sepal Width of 3.3cm is: [7.31013867]
+The predicted mean Sepal Length, given Petal Length of 3.75cm and Petal Width of 1.19cm is: [5.8413892]
+The predicted mean Petal Width, given Sepal Length of 5.84cm and Sepal Width of 3.05cm is: [6.38305793]

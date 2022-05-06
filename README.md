@@ -54,7 +54,7 @@ So working these two pieces of code together, I was able to analyse the data of 
 
 
 ### Regression Analysis:
-I carried out some regression analysis on the Iris flowers’ sepals and petals. I sourced code for this from (W3schools, 2022). Using this, I was able to input values for the Sepal Length and Sepal Width to predict what the size of the petal length would be for example. Using Sepal length, 7.7cm and Sepal Width 3.3 for example, the regression analysis predicted that the Petal length would be 7.3cm. Again, I used file=f argument to save to the .txt file. 
+I carried out some regression analysis on the Iris flowers’ sepals and petals. I sourced code for this from (W3schools, 2022). Using this, I inputted the mean values for the Sepal Length and Sepal Width to predict the mean value for Petal Width would be for example. Using the mean Sepal length, 5.84cm and Sepal Width 3.05 for example, the regression analysis predicted that the mean Petal width would be 6.38cm. Again, I used file=f argument to save to the .txt file. This regression analysis could be carried out on any combination of any two attributes.
 
 
 ### Histograms: 
